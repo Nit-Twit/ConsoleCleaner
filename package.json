@@ -1,6 +1,6 @@
 {
   "name": "console-cleaner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple tool to find and remove console logs",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,8 @@
   "bin": {
     "console-cleaner": "./index.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "NitTwit",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^5.3.0",
     "glob": "^11.0.0",
