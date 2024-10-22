@@ -1,6 +1,6 @@
 {
-  "verbose": false,
+  "verbose": true,
   "ignore": [
-    "index.js"
+    "*"
   ]
 }

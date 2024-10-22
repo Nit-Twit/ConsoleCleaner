@@ -170,6 +170,11 @@ if (cleanerConfigFile.length === 0 || cleanerConfigFile === 0) {
         ignore: ["node_modules", "node_modules/**", ...config.ignore],
       }).then((files) => files);
       if (files.length === 0) {
+        console.log(
+          chalk.redBright(
+            "Error: Detected no files to modify. Check your .cleanerconfig.json file and try again."
+          )
+        );
         process.exit(0);
       }
       const promises = files.map(async (file) => {
@@ -190,6 +195,11 @@ if (cleanerConfigFile.length === 0 || cleanerConfigFile === 0) {
         ignore: ["node_modules", "node_modules/**"],
       }).then((files) => files);
       if (files.length === 0) {
+        console.log(
+          chalk.redBright(
+            "Error: Detected no files to modify. Check your .cleanerconfig.json file and try again."
+          )
+        );
         process.exit(0);
       }
       const promises = files.map(async (file) => {
